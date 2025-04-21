@@ -1,0 +1,17 @@
+/* 
+Theme Name: Handel
+Theme URI: https://seusite.com
+Author: Handel
+Author URI: https://seusite.com
+Description: Uma breve descrição do seu tema.
+Version: 1.0
+Text Domain: Handel
+
+*/
+
+@import './css/base.css';
+@import './css/header.css';
+@import './css/slide.css';
+@import './css/home.css';
+@import './css/products.css';
+@import './css/footer.css';
