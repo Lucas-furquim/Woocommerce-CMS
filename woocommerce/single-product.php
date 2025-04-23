@@ -58,7 +58,7 @@
     </div>
 
   </div>
-  <div class='product-info'>
+  <div class='product-detail'>
   <small><?=  $produto['sku']; ?></small>
   <h1><?=  $produto['name']; ?></h1>
   <p class='product-price'><?=  $produto['price']; ?></p>
