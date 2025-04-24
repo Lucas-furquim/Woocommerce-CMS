@@ -1,0 +1,126 @@
+/* geral */
+
+.woocommerce a {
+  text-decoration: underline;
+}
+
+/* Notificações */
+
+.woocommerce-message,
+.woocommerce-info,
+.woocommerce-error {
+  background: #eee;
+  border: none;
+  color: #000;
+  padding: 15px 20px;
+}
+
+.woocommerce-message::before,
+.woocommerce-info::before,
+.woocommerce-error::before {
+  display: none;
+}
+
+.woocommerce-error {
+  border-left: 4px solid orangered;
+}
+
+.woocommerce-message,
+.woocommerce-info {
+  border-left: 4px solid olivedrab;
+}
+
+/* formularios */
+
+.woocommerce input,
+.woocommerce select {
+  font-size: 1.125rem !important;
+  border: 1px solid rgba(0, 0, 0, 0.08) !important;
+  background: rgba(0, 0, 0, 0.08) !important;
+  padding: 10px 15px !important;
+  border-radius: 4px !important;
+}
+
+.woocommerce form .form-row {
+  padding: 3px 0px !important;
+}
+
+.woocommerce button.wc-block-components-button {
+  background-color: #000 !important;
+  color: #ffffff !important;
+  font-weight: 500 !important;
+  text-transform: capitalize !important;
+  height: 57px !important;
+}
+
+.woocommerce .wc-block-cart__submit-container {
+  background-color: #0066bb;
+}
+
+.woocommerce .wc-block-cart__submit-container:hover {
+  background-color: #11188eee;
+}
+
+.woocommerce .wc-block-cart__submit-container a {
+  color: #ffffff !important;
+  text-decoration: none !important;
+  text-transform: capitalize;
+  font-weight: 500px;
+}
+
+.wc-block-components-totals-coupon__form {
+  align-items: flex-end;
+}
+
+.woocommerce button.wc-block-components-button span {
+  opacity: 1 !important;
+}
+
+/* reset input */
+
+.woocommerce-page .wc-block-components-text-input input::placeholder,
+.woocommerce .wc-block-components-text-input input::placeholder {
+  color: transparent !important;
+}
+
+.woocommerce-page .wc-block-components-text-input label,
+.woocommerce .wc-block-components-text-input label {
+  display: block !important;
+  font-weight: bold !important;
+  margin-bottom: 5px !important;
+  color: #333 !important;
+}
+
+.woocommerce-page .wc-block-components-text-input label {
+  position: static !important;
+  margin-bottom: 5px !important;
+  display: block !important;
+  transform: initial !important;
+}
+
+.wc-block-components-text-input {
+  display: grid !important;
+  grid-template-rows: auto auto !important;
+}
+
+/* Inverte a ordem colocando o input na segunda linha */
+.wc-block-components-text-input label {
+  order: 1 !important;
+}
+
+.wc-block-components-text-input input {
+  order: 2 !important;
+}
+
+/* Carrinho */
+
+.woocommerce #wc-block-components-totals-coupon__input-coupon {
+  min-width: 180px;
+  margin-right: 10px;
+}
+
+.wp-block-woocommerce-cart .wp-block-woocommerce-cart-order-summary-block h2 {
+  margin-bottom: 10px !important;
+  font-size: 1.25rem !important;
+  text-transform: uppercase !important;
+}
