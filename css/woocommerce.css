@@ -45,23 +45,25 @@
   padding: 3px 0px !important;
 }
 
-.woocommerce button.wc-block-components-button {
+button.wc-block-components-button,
+.woocommerce-form-login__submit,
+.woocommerce-Button {
   background-color: #000 !important;
   color: #ffffff !important;
   font-weight: 500 !important;
   text-transform: capitalize !important;
-  height: 57px !important;
+  height: 50px !important;
 }
 
-.woocommerce .wc-block-cart__submit-container {
+.wc-block-cart__submit-container {
   background-color: #0066bb;
 }
 
-.woocommerce .wc-block-cart__submit-container:hover {
+.wc-block-cart__submit-container:hover {
   background-color: #11188eee;
 }
 
-.woocommerce .wc-block-cart__submit-container a {
+.wc-block-cart__submit-container a {
   color: #ffffff !important;
   text-decoration: none !important;
   text-transform: capitalize;
@@ -72,19 +74,19 @@
   align-items: flex-end;
 }
 
-.woocommerce button.wc-block-components-button span {
+button.wc-block-components-button span {
   opacity: 1 !important;
 }
 
 /* reset input */
 
 .woocommerce-page .wc-block-components-text-input input::placeholder,
-.woocommerce .wc-block-components-text-input input::placeholder {
+.wc-block-components-text-input input::placeholder {
   color: transparent !important;
 }
 
 .woocommerce-page .wc-block-components-text-input label,
-.woocommerce .wc-block-components-text-input label {
+.wc-block-components-text-input label {
   display: block !important;
   font-weight: bold !important;
   margin-bottom: 5px !important;
@@ -114,7 +116,7 @@
 
 /* Carrinho */
 
-.woocommerce #wc-block-components-totals-coupon__input-coupon {
+#wc-block-components-totals-coupon__input-coupon {
   min-width: 180px;
   margin-right: 10px;
 }
@@ -123,4 +125,115 @@
   margin-bottom: 10px !important;
   font-size: 1.25rem !important;
   text-transform: uppercase !important;
+}
+
+/* Finalizar compra */
+
+.wc-block-components-title {
+  font-size: 1rem !important;
+  padding: 15px !important;
+  background: #111 !important;
+  color: #fff !important;
+  font-weight: 400;
+  border-radius: 4px !important;
+  margin-bottom: 10px !important;
+  text-transform: uppercase;
+}
+
+.woocommerce-checkout .woocommerce .wc-block-checkout__payment-method {
+  margin: 0px 0px 0px 0px !important;
+}
+
+.woocommerce-checkout
+  .woocommerce
+  .wc-block-components-checkout-place-order-button__text {
+  font-size: 1.25rem;
+}
+
+.woocommerce-checkout .woocommerce .wc-block-components-button {
+  background: #0066bb !important;
+  border: none;
+}
+
+.woocommerce-checkout .woocommerce .wc-block-components-button:hover {
+  background: #1188ee !important;
+}
+
+.woocommerce form.login,
+.woocommerce form.register {
+  border: none !important;
+  padding: 0px !important;
+  max-width: 600px !important;
+}
+
+/* PagSeguro */
+
+.woocommerce #pagseguro-payment-form {
+  border: none;
+}
+
+.woocommerce #payment div.payment_box ::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+/* Minha conta */
+
+.woocommerce-account.logged-in .woocommerce {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 30px;
+}
+
+@media (max-width: 800px) {
+  .woocommerce-account.logged-in .woocommerce {
+    grid-template-columns: 1fr;
+  }
+}
+
+.woocommerce-account.logged-in .woocommerce::before,
+.woocommerce-account.logged-in .woocommerce::after {
+  display: none;
+}
+
+.woocommerce-account.logged-in .woocommerce-MyAccount-navigation,
+.woocommerce-account.logged-in .woocommerce-MyAccount-content {
+  width: auto;
+  float: none;
+}
+
+/* Side Menu */
+
+.woocommerce-MyAccount-navigation ul {
+  background-color: #111;
+}
+
+.woocommerce-MyAccount-navigation a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.08);
+}
+
+.woocommerce-MyAccount-navigation a:hover,
+.woocommerce-MyAccount-navigation .is-active a {
+  background-color: orangered;
+}
+
+.woocommerce-MyAccount-content p {
+  margin-bottom: 1rem;
+}
+
+.woocommerce-MyAccount-content button {
+  margin-top: 15px !important;
+  background-color: #000 !important;
+  color: #ffffff !important;
+  font-weight: 500 !important;
+  text-transform: capitalize !important;
+  height: 50px !important;
+}
+
+.woocommerce .woocommerce-customer-details address {
+  border-radius: 0px !important;
+  border-width: 1px !important;
 }
