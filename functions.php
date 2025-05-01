@@ -43,4 +43,5 @@ function remove_some_body_class($classes) {
 add_filter('body_class', 'remove_some_body_class');
 
 include(get_template_directory() . '/inc/user-customer-menu.php');
+include(get_template_directory() . '/inc/checkout-customizado.php');
 ?>

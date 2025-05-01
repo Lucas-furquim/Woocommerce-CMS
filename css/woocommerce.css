@@ -47,7 +47,8 @@
 
 button.wc-block-components-button,
 .woocommerce-form-login__submit,
-.woocommerce-Button {
+.woocommerce-Button,
+.woocommerce .checkout #place_order {
   background-color: #000 !important;
   color: #ffffff !important;
   font-weight: 500 !important;
@@ -236,4 +237,58 @@ button.wc-block-components-button span {
 .woocommerce .woocommerce-customer-details address {
   border-radius: 0px !important;
   border-width: 1px !important;
+}
+
+/* Checkout */
+
+.woocommerce-form-coupon-toggle {
+  display: none;
+}
+
+.woocommerce .checkout h3 {
+  font-size: 1rem;
+  padding: 15px;
+  background: #111;
+  color: #fff;
+  font-weight: 400;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.woocommerce #ship-to-different-address {
+  float: none !important;
+}
+
+@media (max-width: 800px) {
+  .woocommerce #ship-to-different-address {
+    margin-top: 30px;
+  }
+
+  .woocommerce #order_review_heading {
+    margin-top: 30px;
+  }
+}
+
+.woocommerce #payment,
+.woocommerce #payment div.payment_box {
+  background-color: rgba(0, 0, 0, 0.08);
+  font-size: 1rem;
+  color: #000;
+}
+
+.woocommerce #payment #place_order {
+  float: none;
+  margin-top: 20px;
+  font-size: 1.25rem;
+  padding: 15px 30px;
+  background-color: #0066bb !important;
+}
+
+.woocommerce #payment #place_order:hover {
+  background-color: #1188ee !important;
+}
+
+.woocommerce #payment .place-order {
+  padding: 1em !important;
 }
