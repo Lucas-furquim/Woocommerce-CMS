@@ -39,6 +39,7 @@ function remove_some_body_class($classes) {
   }
   return $classes;
 }
+add_filter('woocommerce_enable_order_notes_field', '__return_false');
 
 add_filter('body_class', 'remove_some_body_class');
 
